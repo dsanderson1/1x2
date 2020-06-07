@@ -27,7 +27,7 @@ module.exports = function (arrInsert) {
   let unique = arrInsert.filter(({ id }) => !arrCompareSet.has(id));
 
   //remove duplicates from the unique values
-  let uniqueNoDupes = unique.filter((item,index,array)=>array.findIndex(t=>(t.id === item.id))===index)
+  let uniqueNoDupes = unique.filter((item,index,array)=>array.findIndex(t=>(t.id === item.id))===index);
 
   //insert unique items. For each row in superArray add unique item(s) to the end
   if (uniqueNoDupes.length>0){
@@ -45,4 +45,4 @@ module.exports = function (arrInsert) {
     }
   }
   return(superArray);
-}
+};
