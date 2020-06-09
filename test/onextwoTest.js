@@ -1,7 +1,7 @@
 //require the assert library with all the functions such as .equals.
 const assert = require('chai').assert;
-//require the actual javascript file with the function.
 
+//resets the cache for onextwo everytime a test is completed. 
 function resets(){
   delete require.cache[require.resolve('../onextwo')];
 }
