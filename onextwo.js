@@ -11,10 +11,10 @@ module.exports = function(arrInsert) {
     //stop being an object
     let countAsInt = Object.values(count);
 
-    let max = 0;
+    let max = 1;
     countAsInt.forEach((value, index) => {
       if (value > 1){
-        max = max + value;
+        max *=countAsInt[index];
       }
     });
     max = max - 1;
