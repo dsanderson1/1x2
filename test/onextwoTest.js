@@ -3,7 +3,7 @@ const assert = require('chai').assert;
 const onextwo = require('../onextwo');
 
 //5 tests that show if the input matches the expected input. Used .deepEqual() as it forces objects to be compared and .equal() doesn't
-describe('1st Test', function(){
+describe('5 Tests of functionality', function(){
   it('[{id:1}, {id:2}] should return [[{id:1}, {id:2}]]', function(){
     let result = onextwo([{id:1}, {id:2}]);
     assert.deepEqual(result, [[{id:1}, {id:2}]]);
